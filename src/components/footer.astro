@@ -1,0 +1,44 @@
+---
+import Image from 'astro/components/Image.astro'
+import youtube from '../img/youtube.svg'
+import facebook from '../img/facebook.svg'
+import twitter from '../img/twitter.svg'
+import instagram from '../img/instagram.svg'
+import linkedin from '../img/linkedin.svg'
+---
+
+<footer class="bg-white flex-row flex justify-center space-x-32">
+    <div class="flex flex-row justify-around space-x-20">
+        <h1 class="text-2xl">Hollyvooz</h1>
+        <div class="space-y-1">
+            <h4>Contacto:</h4>
+            <p>info@hollyvooz.com</p>
+            <p>666666666</p>
+            <p>Madrid</p>
+        </div>
+        <div class="space-y-2">
+            <h4>Products<h4>
+            <p>Auctor volutpat.</p>
+            <p>Fermentum turpis.</p>
+            <p>Mi consequat.</p>
+            <p>Amet venenatis.</p> 
+        </div>
+        <div class="space-y-2">
+            <h4>About<h4>
+            <p>Auctor volutpat.</p>
+            <p>Fermentum turpis.</p>
+            <p>Mi consequat.</p>
+            <p>Amet venenatis.</p> 
+        </div>
+    </div>
+    <div>
+        <h4>Nuestras redes</h4>
+        <div class="flex flex-row space-x-4">
+            <a href=""><Image src={youtube} alt="simbolo de youtube" class="size-10"/></a>
+            <a href=""><Image src={facebook} alt="simbolo de facebook" class="size-10"/></a>
+            <a href=""><Image src={twitter} alt="simbolo de twitter" class="size-10"/></a>
+            <a href=""><Image src={instagram} alt="simbolo de instagram" class="size-10"/></a>
+            <a href=""><Image src={linkedin} alt="simbolo de linkedin" class="size-10"/></a>
+        </div>
+    </div>
+</footer>

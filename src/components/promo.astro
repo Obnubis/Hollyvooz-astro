@@ -1,0 +1,30 @@
+---
+import Video from '../img/Group 377.png'
+import Image from 'astro/components/Image.astro'
+import Imagen from '../img/Desktop.svg'
+---
+
+
+
+
+<div class="flex flex-col bg-white justify-around h-full py-8">
+    <div class="flex flex-row justify-center gap-96">
+        <div class="flex flex-col justify-center gap-y-16">
+            <h1 class="text-4xl max-w-sm font-bold">Líderes de las locuciones online</h1>
+            <p class="max-w-xl">Reducimos los costes y los tiempos de la grabacion de tu proyecto. Siempre con la mejor calidad, gracias a nuestros locutores, técnicos y estudios de sonido dispersos por todo el mundo. Y en cualquier idioma!</p>
+        </div>
+        <div>
+            <Image src={Video} alt="Video de la web"></Image>
+        </div>
+    </div>
+    <div class="flex flex-row justify-center gap-96">
+        <div>
+            <Image src={Imagen} alt="Video de la web"></Image>
+        </div>
+        <div class="flex flex-col justify-center gap-y-16">
+            <h1 class="text-4xl max-w-sm font-bold">Nuestra propia plataforma segura de grabación</h1>
+            <p class="max-w-xl">Contamos con un sistema de grabación unico en el mundo. Desarrollado por nuestros programadores ew indexado en en los servidores de amazon...</p>
+            <button class="border border-black w-24 rounded"><a href="">Saber más</a></button>
+        </div>
+    </div>
+</div>
