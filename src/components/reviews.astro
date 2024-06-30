@@ -1,29 +1,33 @@
 ---
 import { Image } from 'astro:assets';
 import Video from '@img/video-solid.svg'
+import Tostarrica from '@videos/Tostarrica.webm'
+import Canal_Historia from '@videos/Canal_Historia.webm'
+import Spot_Boston from '@videos/Spot_Boston.webm'
+import Just_Dance from '@videos/Just_Dance.webm'
 import Logo from '@img/Group.png'
 import Deloitte from '@img/Frame.png'
 import Uni from '@img/uni.png'
 ---
 
 
-<div class="flex flex-col bg-white items-center gap-10 py-12">
+<div class="flex flex-col items-center gap-10 py-12">
     <h1 class="text-6xl font-bold">+2000 Clientes satisfechos</h1>
     <p class="text-2xl">Hemos colaborado en proyectos para marcas líderes como....</p>
     <div class="flex flex-row justify-center gap-28 mt-8">
         <div class="ml-5">
-            <Image class="w-1/3 mb-4" src={Video} alt="video de ikea"></Image>
-            <h2 class="text-2xl font-bold mb-2">Spot Ikea</h2>
+            <video class="w-72 mb-4" src={Canal_Historia}></video>
+            <h2 class="text-2xl font-bold mb-2">Canal Historia (AMC)</h2>
             <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
         <div>
-            <Image class="w-1/3 mb-4" src={Video} alt="video de ikea"></Image>
-            <h2 class="text-2xl font-bold mb-2">Spot Ikea</h2>
+            <video class="w-72 mb-4" src={Tostarrica}></video>
+            <h2 class="text-2xl font-bold mb-2">Spot Tostarrica</h2>
             <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
         <div>
-            <Image class="w-1/3 mb-4" src={Video} alt="video de ikea"></Image>
-            <h2 class="text-2xl font-bold mb-2">Spot Ikea</h2>
+            <video class="w-72 mb-4" src={Just_Dance}></video>
+            <h2 class="text-2xl font-bold mb-2">Spot Just Dance 2023</h2>
             <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
     </div>

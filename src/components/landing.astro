@@ -1,34 +1,34 @@
 ---
-	import Mundo from '@img/mundo.svg'
+	import Mundo from '@img/Mundo.gif'
 	import Onda from '@img/Vector.svg'
     import { Image } from 'astro:assets';
 ---
 
 <div class="flex flex-col">
-    <div class="bg-white flex flex-row justify-around py-8">
+    <div class=" flex flex-row justify-around py-8">
         <div class="flex flex-col justify-center gap-4">
-            <h1 class="text-6xl font-bold">Bienvenido a Ivvoiz</h1>
+            <h1 class="text-6xl font-bold mb-2">Bienvenido a Ivvoiz</h1>
             <div class="flex flex-col gap-10">
                 <h1 class="text-2xl max-w-3xl text-5xl">La cadena de estudios de grabación online más grande del mundo</h1>
                 <p class="max-w-3xl text-xl">Somos la agencia de voces profesionales on line que necesitas, para agilizar y terminar todos tus proyectos de confianza. Contamos con más de 400 locutores profesionales online con sus propios Homestudios verificados por nuestros ingenieros de sonido.</p>
-                <button class="w-2/4 border border-black rounded-md"><a href="">Quiero un presupuesto</a></button>
+                <button class="w-2/4 border border-black rounded-md py-2"><a href="">Quiero un presupuesto</a></button>
             </div>
         </div>
         <div class="relative w-6/12 flex justify-center"> <!-- Contenedor relativo para la imagen del mundo y los elementos superpuestos -->
-            <Image src={Mundo} alt="El mundo" class="w-96 h-96 z-0"/> <!-- Imagen del mundo -->
-            <div class="absolute -top-0 left-1/3 transform -translate-x-1/2 p-2 border border-black text-center w-20">
-                <p>+ 30 Países</p>
+            <Image src={Mundo} alt="El mundo" class="w-72 h-72 rounded"/> <!-- Imagen del mundo -->
+            <div class="absolute -top-0 left-72 transform -translate-x-1/2 p-2 border border-black text-center w-20 z-10">
+                <p class="z-10">+ 30 Países</p>
             </div>
-            <div class="absolute bottom-8 left-11 p-2 border border-black text-center flex flex-col items-center"> <!-- Ajustado -->
+            <div class="absolute bottom-8 left-16 p-2 border border-black text-center flex flex-col items-center"> <!-- Ajustado -->
                 <p>x 2.0<br/>La mejor calidad de sonido online</p>
                 <Image src={Onda} alt="onda de sonido" class="w-12 h-12 mt-2"/>
             </div>
-            <div class="absolute top-3/4 right-44 transform -translate-y-1/2 p-2 border border-black text-center w-32"> <!-- Ajustado -->
+            <div class="absolute top-2/3 right-48 transform -translate-y-1/2 p-2 border border-black text-center w-32 z-10"> <!-- Ajustado -->
                 <p>+700 estudios online</p>
             </div>
         </div>
     </div>
-    <div class="flex flex-row bg-white justify-around">
+    <div class="flex flex-row justify-around">
         <p class="">100% Seguridad de tu material</p>
         <p class="">34.088 Proyectos Reralizados</p>
         <p class="">+ 400 locutores</p>
