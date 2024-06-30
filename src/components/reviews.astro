@@ -1,59 +1,62 @@
 ---
 import { Image } from 'astro:assets';
-import Video from '@img/video-solid.svg'
-import Tostarrica from '@videos/Tostarrica.webm'
-import Canal_Historia from '@videos/Canal_Historia.webm'
-import Spot_Boston from '@videos/Spot_Boston.webm'
-import Just_Dance from '@videos/Just_Dance.webm'
-import Logo from '@img/Group.png'
-import Deloitte from '@img/Frame.png'
-import Uni from '@img/uni.png'
+import Tostarrica from '@videos/Tostarrica.webm';
+import Canal_Historia from '@videos/Canal_Historia.webm';
+import Just_Dance from '@videos/Just_Dance.webm';
+import Logo from '@img/Group.png';
+import Deloitte from '@img/Frame.png';
+import Uni from '@img/uni.png';
 ---
-
 
 <div class="flex flex-col items-center gap-10 py-12">
     <h1 class="text-6xl font-bold">+2000 Clientes satisfechos</h1>
     <p class="text-2xl">Hemos colaborado en proyectos para marcas líderes como....</p>
     <div class="flex flex-row justify-center gap-28 mt-8">
         <div class="ml-5">
-            <video class="w-72 mb-4" src={Canal_Historia}></video>
+            <video class="w-72 mb-4" controls>
+                <source src={Canal_Historia} type="video/webm">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
             <h2 class="text-2xl font-bold mb-2">Canal Historia (AMC)</h2>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div>
-            <video class="w-72 mb-4" src={Tostarrica}></video>
+            <video class="w-72 mb-4" controls>
+                <source src={Tostarrica} type="video/webm">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
             <h2 class="text-2xl font-bold mb-2">Spot Tostarrica</h2>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div>
-            <video class="w-72 mb-4" src={Just_Dance}></video>
+            <video class="w-72 mb-4" controls>
+                <source src={Just_Dance} type="video/webm">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
             <h2 class="text-2xl font-bold mb-2">Spot Just Dance 2023</h2>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
     <div class="bg-white flex flex-row justify-center gap-14 mt-10 mb-10">
-        <Image src={Logo} alt="Logo de BBC"></Image>
-        <Image src={Deloitte} alt="Logo de Deloitte"></Image>
-        <Image src={Uni} alt="Logo de Unilever"></Image>
+        <Image src={Logo} alt="Logo de BBC" />
+        <Image src={Deloitte} alt="Logo de Deloitte" />
+        <Image src={Uni} alt="Logo de Unilever" />
     </div>
     <div class="flex flex-row justify-center gap-28 mt-8">
         <div>
             <img src="" alt="" class="mb-4">
             <h3 class="w-64 mb-2">“Estoy encantada con Hollyvooz. Respondieron muy rápido a mi solicitud y el locutor que grabó fue muy profesional”</h3>
-            <p class="w-64">Rosario Lopez
-                CEO COSMETICS</p>
+            <p class="w-64">Rosario Lopez<br>CEO COSMETICS</p>
         </div>
         <div>
             <img src="" alt="" class="mb-4">
             <h3 class="w-64 mb-2">“Estoy encantada con Hollyvooz. Respondieron muy rápido a mi solicitud y el locutor que grabó fue muy profesional”</h3>
-            <p class="w-64">Rosario Lopez
-                CEO COSMETICS</p>
+            <p class="w-64">Rosario Lopez<br>CEO COSMETICS</p>
         </div>
         <div>
             <img src="" alt="" class="mb-4">
             <h3 class="w-64 mb-2">“Estoy encantada con Hollyvooz. Respondieron muy rápido a mi solicitud y el locutor que grabó fue muy profesional”</h3>
-            <p class="w-64">Rosario Lopez
-                CEO COSMETICS</p>
+            <p class="w-64">Rosario Lopez<br>CEO COSMETICS</p>
         </div>
     </div>
 </div>

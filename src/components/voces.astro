@@ -1,23 +1,33 @@
 ---
-import Video from '@img/video-solid.svg'
-import Spot_Boston from '@videos/Spot_Boston.webm'
-import Tostarrica from '@videos/Tostarrica.webm'
-import Canal_Historia from '@videos/Canal_Historia.webm'
-import Just_Dance from '@videos/Just_Dance.webm'
-import { Image } from 'astro:assets';
+import Spot_Boston from '@videos/Spot_Boston.webm';
+import Tostarrica from '@videos/Tostarrica.webm';
+import Canal_Historia from '@videos/Canal_Historia.webm';
+import Just_Dance from '@videos/Just_Dance.webm';
 ---
 
-<div class=" flex flex-col  gap-y-9 py-8">
-    <div class=" ml-4 text-left gap-y-6 ml-80">
-        <h4 class="text-4xl">El banco de voces mas completo y cualificado</h4>
+<div class="flex flex-col gap-y-9 py-8">
+    <div class="ml-4 text-left gap-y-6 ml-80">
+        <h4 class="text-4xl">El banco de voces más completo y cualificado</h4>
         <p class="text-2xl w-1/3">Contamos con las mejores voces online. Nos aseguramos de que nuestros locutores....</p>
     </div>
     <div class="flex flex-row gap-28 justify-center">
-        <video class="w-1/12" src={Spot_Boston} />
-        <video class="w-1/12" src={Tostarrica} />
-        <video class="w-1/12" src={Canal_Historia}/>
-        <video class="w-1/12" src={Just_Dance}/>
-        <video class="w-1/12" src={Spot_Boston}/>
+        <video class="w-1/12" controls>
+            <source src={Spot_Boston} type="video/webm">
+        </video>
+        <video class="w-1/12" controls>
+            <source src={Tostarrica} type="video/webm">
+        </video>
+        <video class="w-1/12" controls>
+            <source src={Canal_Historia} type="video/webm">
+        </video>
+        <video class="w-1/12" controls>
+            <source src={Just_Dance} type="video/webm">
+        </video>
+        <video class="w-1/12" controls>
+            <source src={Spot_Boston} type="video/webm">
+        </video>
     </div>
-    <button class="border border-black w-14 mt-4 ml-80 rounded-lg"><a href="#">Casting</a></button>
+    <button class="border border-black w-14 mt-4 ml-80 rounded-lg">
+        <a href="#">Casting</a>
+    </button>
 </div>
