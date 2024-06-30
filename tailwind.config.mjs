@@ -4,14 +4,14 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'principal' : '#58bbac',
+				'principal' : '#58bb99',
 				'secundario1' : '#3b857a',
 				'secundario2' : '#91cec5',
 				'adicional1' : '#e5edef',
 				'adicional2' : '#132428',
 			},
 			fontFamily: {
-				'gotham' : ['"Gotham Book"', 'sans-serif']
+				'gotham' : ['Gotham Book', 'sans-serif']
 			}
 		},
 	},
