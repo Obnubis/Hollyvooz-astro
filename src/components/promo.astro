@@ -1,28 +1,31 @@
 ---
-import Video from '@img/Group 377.png'
+import Herramienta from '@videos/herramienta.webm'
 import { Image } from 'astro:assets';
-import Imagen from '@img/Desktop.svg'
+import Imagen from '@img/Studio.jpg'
 ---
 
 
 
 
-<div class="flex flex-col justify-around h-full py-8 bg-adicional1">
-    <div class="flex flex-row gap-48">
-        <div class="flex flex-col justify-r gap-y-16 ml-4">
-            <h1 class="text-4xl max-w-sm font-bold font-gotham">Líderes de las locuciones online</h1>
+<div class="flex flex-col justify-around h-full bg-adicional1 py-24">
+    <div class="flex flex-row gap-48 mb-16">
+        <div class="flex flex-col justify-start gap-y-16 mx-36">
+            <h1 class="text-4xl max-w-sm font-bold font-gotham pt-32">Líderes de las locuciones online</h1>
             <p class="max-w-xl font-gotham">Reducimos los costes y los tiempos de la grabacion de tu proyecto. Siempre con la mejor calidad, gracias a nuestros locutores, técnicos y estudios de sonido dispersos por todo el mundo. Y en cualquier idioma!</p>
         </div>
-        <div>
-            <Image src={Video} alt="Video de la web"></Image>
+        <div class="flex flex-col justify-end items-end gap-y-16 mr-36 rounded overflow-hidden">
+            <video class="w-3/4 mb-4 px-4" controls>
+                <source src={Herramienta} type="video/webm">
+            </video>
+           
         </div>
     </div>
     <div class="flex flex-row justify-center gap-96">
-        <div>
-            <Image src={Imagen} alt="Video de la web"></Image>
+        <div class="mx-36 mt-16">
+            <Image class="rounded-xl" src={Imagen} alt="Video de la web"></Image>
         </div>
-        <div class="flex flex-col justify-center gap-y-16 mr-4">
-            <h1 class="text-4xl max-w-sm font-bold font-gotham">Nuestra propia plataforma segura de grabación</h1>
+        <div class="flex flex-col justify-center gap-y-16 mr-56">
+            <h1 class="text-4xl max-w-sm font-bold font-gotham pt-16">Nuestra propia plataforma segura de grabación</h1>
             <p class="max-w-xl font-gotham">Contamos con un sistema de grabación unico en el mundo. Desarrollado por nuestros programadores ew indexado en en los servidores de amazon...</p>
             <button class="border border-black w-24 rounded font-gotham"><a href="">Saber más</a></button>
         </div>
